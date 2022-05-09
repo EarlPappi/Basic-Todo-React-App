@@ -1,13 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #9DA3AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+.wrapper{
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: #E4E6EB;
+  padding: 20px;
+  height: 70vh;
+  border-radius: 7px;
+}
+
+.wrapper h1{
+  text-align: center;
+}
+
+.inner-view{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.inner-view p{
+  width: 80%;
+}
+
+/* .inner-view .fa-icon{
+  width: 10%;
+  font-size: 1em;
+  color: white;
+  background: red;
+  padding: 10px 0;
+  border-radius: 5px;
+} */
+
+button .fa-icon{
+  padding: 8px;
+  font-size: 1em;
+  border: none;
+}
+
+.deleteBtn{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+}
+
+input[type="checkbox"]{
+  width: 30px;
+  height: 20px;
+}
+
+.task-list-con{
+  height: 80%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-top: 5px;
+}
+
+.task-list-con::-webkit-scrollbar {
+  display: none;
+}
+
+
+.create-task{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  flex-direction: column;
+}
+
+input[type="text"]{
+  width: 70%;
+  margin-right: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type="text"]:active, input[type="text"]:focus{
+  outline: none;
+}
+
+.create-task button{
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+}
+
+
+
